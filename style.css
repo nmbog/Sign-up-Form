@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    margin: 0;
+}
+
+.image-container {
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+}
+
+.image-container>img {
+    height: 100%;
+    width: 100%;
+}
+
+.image-text {
+    display: flex;
+    position: fixed;
+    top: 20%;
+    height: 200px;
+    width: 30%;
+}
