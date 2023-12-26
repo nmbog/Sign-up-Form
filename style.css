@@ -1,6 +1,12 @@
 body {
     display: flex;
     margin: 0;
+    --text-color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
 }
 
 .image-container {
@@ -16,8 +22,79 @@ body {
 
 .image-text {
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    top: 20%;
+    top: 50%;
     height: 200px;
     width: 30%;
+    color: var(--text-color)
+}
+
+.image-text>p {
+    font-size: 75px;
+    font-family: 'Grandiflora One', cursive;
+}
+
+.above-content {
+    align-self: top;
+    display: flex;
+    flex-direction:  column;
+    padding-left: 60px;
+    margin-top: 125px;
+    margin-bottom: 30px;
+    height: 150px;
+    width: 900px;
+    font-family: 'Playfair Display', serif;
+    line-height: 40px;
+    font-size: 40px;
+}
+
+.form-header {
+    font-family: 'Grandiflora One', cursive;
+}
+
+form {
+    margin-top: 60px;
+    padding-top: 5px;
+    padding-left: 60px;
+    height: 30vh;
+}
+
+label {
+    padding-bottom: 10px;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+}
+
+#submit {
+    margin-top: 20px;
+    width: 20%;
+    text-align: center;
+    background-color: #a3cebe;
+    border-radius: 5px;
+    border: 1px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-family: 'Grandiflora One', cursive;
+    font-weight: bold;
+}
+
+.login {
+    padding-left: 60px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
 }
